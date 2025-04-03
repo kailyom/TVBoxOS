@@ -59,6 +59,5 @@ android {
 }
 
 dependencies {
-    implementation project(':catvod')
 
 }
