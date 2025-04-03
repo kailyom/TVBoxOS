@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.fongmi.chaquo'
     compileSdk 33
 
     defaultConfig {
@@ -15,7 +16,8 @@ android {
             abiFilters "armeabi-v7a"
         }
         python {
-            buildPython("D:/Programs/Python/Python38/python.exe")
+            //buildPython("D:/Programs/Python/Python38/python.exe")
+            version "3.8"
             pip {
                 install "lxml"
                 install "ujson"
@@ -58,5 +60,6 @@ android {
 }
 
 dependencies {
+    implementation project(':catvod')
 
 }
